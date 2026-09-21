@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cinderharth Games — We make worlds worth getting lost in.">
+  <title>Cinderharth Games</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #090807;
+      color: #eee9df;
+      font-family: Georgia, "Times New Roman", serif;
+      min-height: 100vh;
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 24px;
+      background:
+        radial-gradient(circle at 50% 45%, rgba(126, 72, 35, 0.22), transparent 32%),
+        radial-gradient(circle at 50% 100%, rgba(82, 42, 20, 0.18), transparent 45%),
+        #090807;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 24px;
+      border: 1px solid rgba(220, 190, 145, 0.14);
+      pointer-events: none;
+    }
+
+    .content {
+      position: relative;
+      max-width: 900px;
+    }
+
+    .eyebrow {
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      letter-spacing: 0.45em;
+      text-transform: uppercase;
+      color: #a89b8a;
+      margin-bottom: 28px;
+    }
+
+    h1 {
+      font-size: clamp(44px, 11vw, 110px);
+      letter-spacing: 0.08em;
+      font-weight: 500;
+      line-height: 0.95;
+      text-transform: uppercase;
+    }
+
+    .divider {
+      width: 90px;
+      height: 1px;
+      background: #8c5b35;
+      margin: 32px auto;
+    }
+
+    .tagline {
+      font-size: clamp(19px, 4vw, 30px);
+      font-style: italic;
+      color: #c9bba8;
+      line-height: 1.5;
+    }
+
+    .coming {
+      margin-top: 52px;
+      font-family: Arial, sans-serif;
+      font-size: 10px;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: #746b61;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 28px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      color: #4f4942;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="hero">
+    <div class="content">
+      <div class="eyebrow">Independent Game Studio</div>
+
+      <h1>Cinderharth<br>Games</h1>
+
+      <div class="divider"></div>
+
+      <p class="tagline">
+        We make worlds worth getting lost in.
+      </p>
+
+      <div class="coming">
+        Something is taking shape.
+      </div>
+    </div>
+
+    <footer>
+      Cinderharth Games
+    </footer>
+  </main>
+</body>
+</html>
